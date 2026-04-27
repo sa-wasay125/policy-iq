@@ -1,0 +1,11 @@
+langchain==0.2.16
+langchain-community==0.2.16
+langchain-google-genai==1.0.10
+faiss-cpu==1.8.0
+pypdf==4.3.1
+fastapi==0.115.0
+uvicorn==0.30.6
+python-multipart==0.0.9
+streamlit==1.38.0
+python-dotenv==1.0.1
+sentence-transformers==3.0.1
