@@ -16,12 +16,9 @@ from dotenv import load_dotenv
 # ──────────────────────────────────────────────
 load_dotenv()
 _model = SentenceTransformer("all-MiniLM-L6-v2")
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 FAISS_INDEX_DIR = os.getenv("FAISS_INDEX_DIR", "data/faiss_index")
 TOP_K = int(os.getenv("TOP_K", 5))
 
-if not GOOGLE_API_KEY:
-    raise ValueError("❌ GOOGLE_API_KEY not found in .env")
 
 
 INDEX_FILE = os.path.join(FAISS_INDEX_DIR, "index.faiss")
